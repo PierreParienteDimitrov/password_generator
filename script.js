@@ -1,6 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+
+
+
+
+
 //Generate password
 function generatePassword() {
   alert('test')
@@ -17,3 +22,12 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// GENERATE FUNCTIONS
+
+function getRandomLower() {
+
+  console.log(String.fromCharCode(100))
+
+
+}
