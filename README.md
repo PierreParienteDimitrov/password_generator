@@ -1,63 +1,25 @@
-# Pseudo Code
+# Links
 
-In order to generate a random passwords from characters
-I want to create an array with all of the potential characters to use
-The passwordArray concatenates the Arrays of each types
-The password length is an array, which length is defined by the user
-For each index of the password
-I want to generate a random number from my array of characters
-Then I want to display my array as a string
+Deployed App: https://pierreparientedimitrov.github.io/password_generator/
+GitHub repository: https://github.com/PierreParienteDimitrov/password_generator
 
+# Screenshots
 
-
-
-
-# password_generator
+./assets/images/PastedGraphic-1.png
+./assets/images/PastedGraphic-2.png
+./assets/images/PastedGraphic-3.png
+./assets/images/PastedGraphic-4.png
 
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+# Commets
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+In order to create a random password: 
 
-## User Story
-
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
-
-## Acceptance Criteria
-
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+- I ask user the length of the password. The user is prompted to give a correct answer until he inputs a number between 8 and 128 (any letter or combination of letters will prompt the user to chose a number between 8 and 128)
+- I ask user if he wants to include UPPERCASES, numbers and symbols. Lowercases are chosen by default. 
+- I created an array for each choice (UPPERCASES, lowercases, numbers and symbols). The arrays consist in character code numbers (https://www.w3schools.com/charsets/ref_html_ascii.asp). I populated the arrays using a function with a for loop that push the numbers into an empty array from lower value to hight value. 
+- I defined an array that takes by default the lowercase array, and concatenates the uppercase, numbers, and symbols if they are selected by the user 
+- I then defined a loop that takes the length of the user input. Each iteration choses a random number of the array defined above (by default, only the numbers contained in the lowercase array). 
+- I push the random numbers into a new array that takes the length of the user input and apply the String.fromCharCodes() that transform the random number into a letter. 
+- I concatenate all the elements from the array into a string using the .join method (with no spacing between the elements) and return the string
+- The string is displayed in the textarea on the webpage
