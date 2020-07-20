@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    background: #342F89;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.card {
+    background: #201C4F;
+    padding: 0px;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.class-body {
+    padding: 50px;
+}
+
+#password {
+    width: 100%;
+    height: 100%;
+    background: #13112F;
+    text-align: center;
+    border: none;
+    color: white;
+}
+
+.class-footer {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #342F89;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 40px;
+}
