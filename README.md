@@ -5,10 +5,10 @@ GitHub repository: https://github.com/PierreParienteDimitrov/password_generator
 
 # Screenshots
 
-./assets/images/PastedGraphic-1.png
-./assets/images/PastedGraphic-2.png
-./assets/images/PastedGraphic-3.png
-./assets/images/PastedGraphic-4.png
+assets/images/PastedGraphic-1.png
+assets/images/PastedGraphic-2.png
+assets/images/PastedGraphic-3.png
+assets/images/PastedGraphic-4.png
 
 
 # Commets
