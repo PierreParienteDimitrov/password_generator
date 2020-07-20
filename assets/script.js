@@ -15,7 +15,7 @@ function generatePassword() {
     
     // Ask user choices
     const getLength = charLength()
-    const getUppercase = confirm('Do you want to use lowercases?')
+    const getUppercase = confirm('Do you want to use UPPERCASE?')
     const getNumbers = confirm('Do you want to use numbers?')
     const getSymbols = confirm('Do you want to use symbols?')
     
@@ -47,7 +47,7 @@ function lowerToHigh(low, high) {
 function charLength() {
     var userInput
     do {
-        userInput = prompt('Please chose a password length between 8 and 128 characters.')
+        userInput = prompt('Please chose a NUMBER between 8 and 128 characters for your password length.')
         } while (parseInt(userInput) < 8 || parseInt(userInput) > 128 || isNaN(parseInt(userInput)))
     return userInput
 }
