@@ -47,7 +47,7 @@ function lowerToHigh(low, high) {
 function charLength() {
     var userInput
     do {
-        userInput = prompt('Please chose a NUMBER between 8 and 128 characters for your password length.')
+        userInput = prompt('Please chose a NUMBER between 8 and 128.')
         } while (parseInt(userInput) < 8 || parseInt(userInput) > 128 || isNaN(parseInt(userInput)))
     return userInput
 }
