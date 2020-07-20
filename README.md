@@ -11,7 +11,7 @@ GitHub repository: https://github.com/PierreParienteDimitrov/password_generator
 ![](assets/images/PastedGraphic-4.png)
 
 
-# Commets
+# Comments
 
 In order to create a random password: 
 
