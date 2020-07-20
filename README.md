@@ -1,3 +1,17 @@
+# Pseudo Code
+
+In order to generate a random passwords from characters
+I want to create an array with all of the potential characters to use
+The passwordArray concatenates the Arrays of each types
+The password length is an array, which length is defined by the user
+For each index of the password
+I want to generate a random number from my array of characters
+Then I want to display my array as a string
+
+
+
+
+
 # password_generator
 
 
